@@ -1,77 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Biodata Eriz | MSIB</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="biodata.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <div class="halaman">
-      <div id="home" class="margin-batas">
-        <h1 class="center">Home</h1>
-        <p class="padding-height" style="text-align: center">
-          Selamat Datang di Website Kami <br />
-          Eriz Rifqi Irawan <u>Kelompok Baliwangi</u>. Berikut Tugas Web Basic Development
-        </p>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light shadow-sm">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link fw-semibold text-dark" aria-current="page" href="#page1">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold text-dark" aria-current="page" href="#page2">Skill</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold text-dark" aria-current="page" href="#page3">Contact Me</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <hr />
-      <div id="tentang" class="margin-batas">
-        <h1 class="center">About</h1>
-        <p class="padding-height" style="text-align: center">
-          Assalamualaikum wr.wb.<br />
-          Perkenalkan Saya Eriz Rifqi Irawan , Mahasiswa Politeknik Negeri Banyuwangi prodi Teknologi Rekayasa Perangkat Lunak. , lahir pada tanggal 27 OKtober 2001. <br />Sekarang saya menempuh perkuliahan semester 5 dan kegiatan Magang
-          Independen Bersertifikat yaitu <u>MSIB SEAL</u>. Di program ini saya mengambil bidang Bisnis.
-        </p>
-      </div>
-      <hr />
-      <div id="keahlian" class="margin-batas">
-        <h1 class="center">Keahlian</h1>
-        <ul class="padding-height" style="text-align: center">
-          <li>Ms.Office</li>
-          <li>Bisnis</li>
-          <li>Bahasa PHP</li>
-          <li>Coding Dasar</li>
-        </ul>
-      </div>
-      <hr />
-      <div id="pengalaman" class="margin-batas">
-        <h1 class="center">Experience</h1>
-        <ul class="padding-height" style="text-align: center">
-          <li>2014 - 2017 : SMPU Habibullah</li>
-          <li>2017 - 2020 : MAN 1 Banyuwangi</li>
-          <li>2020 - Sekarang : D4-Teknologi Rekayasa Perangkat Lunak</li>
-        </ul>
-      </div>
-      <hr />
-      <div id="portofolio" class="margin-batas">
-        <h1 class="center">portfolio</h1>
-        <ul class="padding-height" style="text-align: center">
-          <li><a href="http://127.0.0.1:5500/fortopolio.html">--Portfolio-- </a></li>
-        </ul>
-      </div>
-      <hr />
-      <div id="contact" class="margin-batas">
-        <h1 class="center">Contact</h1>
-        <ul class="padding-height" style="text-align: center">
-          <li><a href="https://www.instagram.com/erizirawan_/">Instagram</a></li>
-          <li><a href="https://www.tiktok.com/@start.up.pemula">Tik tok</a></li>
-        </ul>
-      </div>
-      <hr />
+    </nav>
+
+    <!-- Bagian Foto atas -->
+    <div id="kopi" class="container d-flex flex-column align-items-center justify-content-center mb-5">
+      <img src="./assets/image/hc.jpg" class="foto-atas rounded-circle" alt="" />
+      <h3 class="queen fw-bold">Eriz Rifqi Irawan</h3>
+      <p class="aqua">Mahasiswa Teknologi Rekayasa Perangkat Lunak</p>
+      <i class="bi bi-arrow-bar-down"></i>
     </div>
+
+    <!-- About Me -->
+    <div class="container mb-5" id="page1">
+      <h4 class="text-center mb-3">About Me</h4>
+      <div class="row">
+        <div class="col-6">
+          <img src="./assets/image/eriz2.jpeg" class="shadow rounded w-100" alt="" />
+        </div>
+        <div class="col-6">
+          <p class="text-about text-secondary ih-ig">
+            Jelaskan pengertian HAM dan apa tujuannya? Sementara menurut UU No. 39/1999 tentang HAM, HAM adalah seperangkat hak yang melekat pada hakikat keberadaan manusia sebagai makhluk Tuhan dan merupakan anugerah yang wajib dihormati,
+            dijunjung tinggi, dilindungi negara, hukum, pemerintah, dan setiap orang, demi kehormatan, harkat, dan martabat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et illum, temporibus animi neque, consectetur a
+            provident, culpa explicabo earum labore officiis fugit libero illo maxime expedita vitae. Nobis ipsa a rem. Unde soluta, eos repellat, quae eligendi ex culpa molestias quam rem atque voluptatibus amet. Officia atque libero sequi
+            nemo!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- skill-->
+    <div class="container mb-5" id="page2">
+      <h2 class="text-center mb-3" My Skill>My Skills</h2>
+      <div class="row">
+        <div class="col-3">
+          <div class="card" style="width: 18rem">
+            <img src="./assets/image/xn.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card" style="width: 18rem">
+            <img src="./assets/image/xn.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card" style="width: 18rem">
+            <img src="./assets/image/xn.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card" style="width: 18rem">
+            <img src="./assets/image/xn.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contack Me -->
+    <div class="container mb-5" id="page3">
+      <h2 class="text-center mb-3">Contact Me</h2>
+      <form class="col-6 mx-auto">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="button" class="btn btn-primary w-100">Primary</button>
+      </form>
+    </div>
+
+    <!--footer -->
+
+    <div class="b-example-divider"></div>
+    <div class="container-fluid">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap" /></svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Company, Inc</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="text-muted" href="#"
+              ><i class="bi bi-twitter"></i></svg
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="#"
+              ><i class="bi bi-instagram"></i></svg
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="#"
+              ><i class="bi bi-facebook"></i></svg
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   </body>
-  <footer>
-    <div class="circle">
-      <ul>
-        <li><a href="http://127.0.0.1:5500/biodata_perbaikan.html#home">Home</a></li>
-        <li><a href="#tentang">About</a></li>
-        <li><a href="#keahlian">Keahlian</a></li>
-        <li><a href="#pengalaman">Experience</a></li>
-        <li><a href="http://127.0.0.1:5500/fortopolio.html">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </footer>
 </html>
